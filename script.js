@@ -2,7 +2,18 @@ const translations = {
   en: {
     nav_about: "About",
     nav_features: "Features",
+    nav_community: "Community",
     nav_beta: "Beta",
+
+    community_eyebrow: "FOLLOW THE DEVELOPMENT",
+    community_title: "Join the Primitive Earth Community",
+    community_text: "Choose how you want to follow the project. Watch development videos on YouTube and join the Discord community for announcements and conversations with other dinosaur fans.",
+    youtube_text: "Watch gameplay, development progress, new dinosaurs, map updates and behind-the-scenes videos.",
+    youtube_button: "Visit the channel",
+    discord_card_title: "Official Community",
+    discord_text: "Receive announcements, talk about the game, share suggestions and meet other members of the Primitive Earth community.",
+    discord_button: "Join the Discord",
+    community_note: "For important beta invitations, also register your email below.",
 
     platform: "Only for PC",
 
@@ -47,10 +58,10 @@ const translations = {
     feature_4_text:
       "Carnivores, herbivores and AI creatures fight for survival.",
 
-    beta_title: "Beta Test Coming Soon",
+    beta_title: "Join the Primitive Earth Closed Beta",
 
     beta_text:
-      "Primitive Earth is in development and a beta test will be available for validation.",
+      "Follow the development journey and be among the first players invited to explore Primitive Earth.",
 
     subscribe: "Notify Me",
 
@@ -70,7 +81,7 @@ const translations = {
     form_sending: "Sending...",
 
     form_success:
-      "You are on the beta list! Check your email inbox.",
+      "Welcome to the pack! We sent a confirmation to your inbox.",
 
     form_duplicate:
       "This email has already been registered on this device.",
@@ -78,13 +89,42 @@ const translations = {
     form_error:
       "The registration could not be completed. Please try again.",
 
-    form_button_sending: "Sending..."
+    form_button_sending: "Sending...",
+
+    confirmation_email:
+      `Welcome to Primitive Earth!
+
+Thank you for joining the closed beta list. Primitive Earth is an independent game being created in Brazil by a lifelong dinosaur fan, with a focus on immersion, survival and a living prehistoric world.
+
+You will receive occasional development updates, important news and information about future testing opportunities. There is no confirmed beta date yet, but you will be among the first to know when invitations become available.
+
+You can also follow development videos on YouTube:
+https://www.youtube.com/@Playprimitiveearth
+
+Join our Discord community for announcements, conversations and suggestions:
+https://discord.gg/tFNcyYBJxn
+
+Thank you for believing in this project from the beginning.
+
+See you in the ancient world,
+Primitive Earth`
   },
 
   pt: {
     nav_about: "Sobre",
     nav_features: "Recursos",
+    nav_community: "Comunidade",
     nav_beta: "Beta",
+
+    community_eyebrow: "ACOMPANHE O DESENVOLVIMENTO",
+    community_title: "Faça parte da comunidade Primitive Earth",
+    community_text: "Escolha como você quer acompanhar o projeto. Veja vídeos do desenvolvimento no YouTube e entre na comunidade do Discord para receber avisos e conversar com outros fãs de dinossauros.",
+    youtube_text: "Acompanhe gameplays, avanços do desenvolvimento, novos dinossauros, atualizações do mapa e bastidores do projeto.",
+    youtube_button: "Visitar o canal",
+    discord_card_title: "Comunidade oficial",
+    discord_text: "Receba avisos, converse sobre o jogo, compartilhe sugestões e conheça outros membros da comunidade Primitive Earth.",
+    discord_button: "Entrar no Discord",
+    community_note: "Para receber convites importantes do beta, cadastre também seu e-mail abaixo.",
 
     platform: "Apenas para PC",
 
@@ -129,10 +169,10 @@ const translations = {
     feature_4_text:
       "Carnívoros, herbívoros e criaturas de IA lutam pela sobrevivência.",
 
-    beta_title: "Beta Teste em Breve",
+    beta_title: "Participe do Beta Fechado de Primitive Earth",
 
     beta_text:
-      "Primitive Earth está em desenvolvimento e terá um beta teste para validação.",
+      "Acompanhe o desenvolvimento e esteja entre os primeiros jogadores convidados para explorar Primitive Earth.",
 
     subscribe: "Avise-me",
 
@@ -152,7 +192,7 @@ const translations = {
     form_sending: "Enviando...",
 
     form_success:
-      "Você entrou na lista do beta! Verifique sua caixa de entrada.",
+      "Bem-vindo ao bando! Enviamos uma confirmação para seu e-mail.",
 
     form_duplicate:
       "Este e-mail já foi cadastrado neste dispositivo.",
@@ -160,13 +200,42 @@ const translations = {
     form_error:
       "Não foi possível concluir o cadastro. Tente novamente.",
 
-    form_button_sending: "Enviando..."
+    form_button_sending: "Enviando...",
+
+    confirmation_email:
+      `Bem-vindo ao Primitive Earth!
+
+Obrigado por entrar na lista do beta fechado. Primitive Earth é um jogo independente desenvolvido no Brasil por um fã de dinossauros desde criança, com foco em imersão, sobrevivência e um mundo pré-histórico vivo.
+
+Você receberá ocasionalmente novidades do desenvolvimento, informações importantes e avisos sobre futuras oportunidades de teste. Ainda não existe uma data confirmada para o beta, mas você estará entre os primeiros a saber quando os convites estiverem disponíveis.
+
+Você também pode acompanhar os vídeos do desenvolvimento no YouTube:
+https://www.youtube.com/@Playprimitiveearth
+
+Entre na nossa comunidade do Discord para receber avisos, conversar e enviar sugestões:
+https://discord.gg/tFNcyYBJxn
+
+Obrigado por acreditar neste projeto desde o começo.
+
+Nos vemos no mundo antigo,
+Primitive Earth`
   },
 
   es: {
     nav_about: "Acerca",
     nav_features: "Características",
+    nav_community: "Comunidad",
     nav_beta: "Beta",
+
+    community_eyebrow: "SIGUE EL DESARROLLO",
+    community_title: "Únete a la comunidad de Primitive Earth",
+    community_text: "Elige cómo quieres seguir el proyecto. Mira vídeos del desarrollo en YouTube y únete a la comunidad de Discord para recibir anuncios y conversar con otros aficionados a los dinosaurios.",
+    youtube_text: "Mira gameplays, avances del desarrollo, nuevos dinosaurios, actualizaciones del mapa y vídeos detrás de escena.",
+    youtube_button: "Visitar el canal",
+    discord_card_title: "Comunidad oficial",
+    discord_text: "Recibe anuncios, habla sobre el juego, comparte sugerencias y conoce a otros miembros de la comunidad de Primitive Earth.",
+    discord_button: "Unirse a Discord",
+    community_note: "Para recibir invitaciones importantes de la beta, registra también tu correo electrónico abajo.",
 
     platform: "Solo para PC",
 
@@ -211,10 +280,10 @@ const translations = {
     feature_4_text:
       "Carnívoros, herbívoros y criaturas de IA luchan por sobrevivir.",
 
-    beta_title: "Beta Próximamente",
+    beta_title: "Únete a la Beta Cerrada de Primitive Earth",
 
     beta_text:
-      "Primitive Earth está en desarrollo y tendrá una beta de validación.",
+      "Sigue el desarrollo y sé uno de los primeros jugadores invitados a explorar Primitive Earth.",
 
     subscribe: "Avísame",
 
@@ -236,7 +305,7 @@ const translations = {
     form_sending: "Enviando...",
 
     form_success:
-      "¡Estás en la lista de la beta! Revisa tu correo electrónico.",
+      "¡Bienvenido a la manada! Enviamos una confirmación a tu correo.",
 
     form_duplicate:
       "Este correo ya fue registrado en este dispositivo.",
@@ -244,7 +313,25 @@ const translations = {
     form_error:
       "No se pudo completar el registro. Inténtalo nuevamente.",
 
-    form_button_sending: "Enviando..."
+    form_button_sending: "Enviando...",
+
+    confirmation_email:
+      `¡Bienvenido a Primitive Earth!
+
+Gracias por unirte a la lista de la beta cerrada. Primitive Earth es un juego independiente desarrollado en Brasil por un aficionado a los dinosaurios desde su infancia, centrado en la inmersión, la supervivencia y un mundo prehistórico vivo.
+
+Recibirás ocasionalmente novedades del desarrollo, información importante y avisos sobre futuras oportunidades de prueba. Todavía no hay una fecha confirmada para la beta, pero serás uno de los primeros en saber cuándo estén disponibles las invitaciones.
+
+También puedes seguir los vídeos del desarrollo en YouTube:
+https://www.youtube.com/@Playprimitiveearth
+
+Únete a nuestra comunidad de Discord para recibir anuncios, conversar y compartir sugerencias:
+https://discord.gg/tFNcyYBJxn
+
+Gracias por creer en este proyecto desde el principio.
+
+Nos vemos en el mundo antiguo,
+Primitive Earth`
   }
 };
 
@@ -535,6 +622,9 @@ newsletterForm.addEventListener(
 
             _subject:
               "Novo cadastro no Beta - Primitive Earth",
+
+            _autoresponse:
+              getTranslation("confirmation_email"),
 
             _template: "table",
 

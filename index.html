@@ -2,46 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-
-  <meta name="theme-color" content="#020814" />
-
-  <meta
-    name="description"
-    content="Primitive Earth is a prehistoric dinosaur survival game for PC."
-  />
-
-  <title>Primitive Earth</title>
-
-  <!-- Ícone do navegador -->
-  <link rel="icon" type="image/png" href="favicon.png" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#07100d" />
+  <meta name="description" content="Primitive Earth is an immersive prehistoric dinosaur survival game for PC." />
+  <title>Primitive Earth — Prehistoric Survival</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <header class="navbar">
-    <a href="#" class="logo" aria-label="Primitive Earth home">
-      PRIMITIVE EARTH
+    <a href="#top" class="logo" aria-label="Primitive Earth home">
+      <span class="logo-mark" aria-hidden="true">PE</span>
+      <span>Primitive Earth</span>
     </a>
 
-    <nav>
+    <nav aria-label="Primary navigation">
       <a data-i18n="nav_about" href="#about">About</a>
-
-      <a data-i18n="nav_features" href="#features">
-        Features
-      </a>
-
+      <a data-i18n="nav_features" href="#features">Features</a>
+      <a data-i18n="nav_community" href="#community">Community</a>
       <a data-i18n="nav_beta" href="#beta">Beta</a>
     </nav>
 
     <label class="language-picker">
       <span class="sr-only">Language</span>
-
       <select id="languageSelect" aria-label="Language">
         <option value="en">EN</option>
         <option value="pt">PT-BR</option>
@@ -50,209 +32,119 @@
     </label>
   </header>
 
-  <main>
-    <section class="hero">
-      <video
-        class="hero-video"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-        aria-hidden="true"
-      >
-        <source
-          src="Nova pasta/primitive.mp4"
-          type="video/mp4"
-        />
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+        <source src="Nova pasta/primitive.mp4" type="video/mp4" />
       </video>
-
       <div class="hero-overlay"></div>
 
-      <div class="hero-content">
-        <span class="tag" data-i18n="platform">
-          Only for PC
-        </span>
-
-        <h1 data-i18n="hero_title">
-          Survive the Ancient World
-        </h1>
-
-        <p data-i18n="hero_text">
-          Become a dinosaur and fight to survive in a brutal
-          prehistoric ecosystem.
-        </p>
-
+      <div class="hero-content page-width">
+        <span class="tag" data-i18n="platform">Only for PC</span>
+        <h1 id="hero-title" data-i18n="hero_title">Survive the Ancient World</h1>
+        <p data-i18n="hero_text">Become a dinosaur and fight to survive in a brutal prehistoric ecosystem.</p>
         <div class="buttons">
-          <a
-            href="#beta"
-            class="btn primary"
-            data-i18n="btn_beta"
-          >
-            Join the Beta
-          </a>
+          <a href="#beta" class="btn primary" data-i18n="btn_beta">Join the Beta</a>
+          <a href="#about" class="btn secondary" data-i18n="btn_more">Learn More</a>
+        </div>
+      </div>
 
-          <a
-            href="#about"
-            class="btn secondary"
-            data-i18n="btn_more"
-          >
-            Learn More
-          </a>
+      <a class="scroll-cue" href="#about" aria-label="Explore Primitive Earth"><span></span></a>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="page-width split">
+        <div class="section-copy">
+          <span class="eyebrow">PRIMITIVE EARTH</span>
+          <h2 data-i18n="about_title">A New Dinosaur Survival Experience</h2>
+          <p data-i18n="about_text">Primitive Earth is a prehistoric survival game focused on immersion, climate changes, hunting, danger and the struggle to stay alive.</p>
+        </div>
+        <article class="card big-card">
+          <span class="card-number">01</span>
+          <h3 data-i18n="pc_title">PC Release</h3>
+          <p data-i18n="pc_text">Primitive Earth is being developed exclusively for computers.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="features" class="section features-section">
+      <div class="page-width">
+        <span class="eyebrow">SURVIVE • ADAPT • DOMINATE</span>
+        <h2 data-i18n="features_title">Game Features</h2>
+        <div class="grid">
+          <article class="card"><span class="card-number">01</span><h3 data-i18n="feature_1_title">Dinosaurs</h3><p data-i18n="feature_1_text">Play as different prehistoric creatures, each with unique behavior.</p></article>
+          <article class="card"><span class="card-number">02</span><h3 data-i18n="feature_2_title">Survival</h3><p data-i18n="feature_2_text">Manage hunger, thirst, stamina and danger in the wild.</p></article>
+          <article class="card"><span class="card-number">03</span><h3 data-i18n="feature_3_title">Dynamic World</h3><p data-i18n="feature_3_text">Face rain, dry seasons, fires and environmental changes.</p></article>
+          <article class="card"><span class="card-number">04</span><h3 data-i18n="feature_4_title">Hunt or Be Hunted</h3><p data-i18n="feature_4_text">Carnivores, herbivores and AI creatures fight for survival.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section split">
-      <div>
-        <h2 data-i18n="about_title">
-          A New Dinosaur Survival Experience
-        </h2>
-
-        <p data-i18n="about_text">
-          Primitive Earth is a prehistoric survival game
-          focused on immersion, climate changes, hunting,
-          danger and the struggle to stay alive.
-        </p>
-      </div>
-
-      <div class="card big-card">
-        <h3 data-i18n="pc_title">PC Release</h3>
-
-        <p data-i18n="pc_text">
-          Primitive Earth is being developed exclusively
-          for computers.
-        </p>
-      </div>
-    </section>
-
-    <section id="features" class="section">
-      <h2 data-i18n="features_title">Game Features</h2>
-
-      <div class="grid">
-        <div class="card">
-          <h3 data-i18n="feature_1_title">
-            Dinosaurs
-          </h3>
-
-          <p data-i18n="feature_1_text">
-            Play as different prehistoric creatures,
-            each with unique behavior.
-          </p>
+    <section id="community" class="section community-section">
+      <div class="page-width community-layout">
+        <div class="section-copy community-intro">
+          <span class="eyebrow" data-i18n="community_eyebrow">FOLLOW THE DEVELOPMENT</span>
+          <h2 data-i18n="community_title">Join the Primitive Earth Community</h2>
+          <p data-i18n="community_text">Choose how you want to follow the project. Watch development videos on YouTube and join the Discord community for announcements and conversations with other dinosaur fans.</p>
         </div>
 
-        <div class="card">
-          <h3 data-i18n="feature_2_title">
-            Survival
-          </h3>
+        <div class="community-grid">
+          <article class="community-card youtube-card">
+            <span class="community-icon" aria-hidden="true">▶</span>
+            <div>
+              <span class="community-channel">YouTube</span>
+              <h3>@Playprimitiveearth</h3>
+              <p data-i18n="youtube_text">Watch gameplay, development progress, new dinosaurs, map updates and behind-the-scenes videos.</p>
+            </div>
+            <a class="btn community-button youtube-button" href="https://www.youtube.com/@Playprimitiveearth" target="_blank" rel="noopener noreferrer" data-i18n="youtube_button">Visit the channel</a>
+          </article>
 
-          <p data-i18n="feature_2_text">
-            Manage hunger, thirst, stamina and danger
-            in the wild.
-          </p>
+          <article class="community-card discord-card">
+            <span class="community-icon" aria-hidden="true">#</span>
+            <div>
+              <span class="community-channel">Discord</span>
+              <h3 data-i18n="discord_card_title">Official Community</h3>
+              <p data-i18n="discord_text">Receive announcements, talk about the game, share suggestions and meet other members of the Primitive Earth community.</p>
+            </div>
+            <a class="btn community-button discord-button" href="https://discord.gg/tFNcyYBJxn" target="_blank" rel="noopener noreferrer" data-i18n="discord_button">Join the Discord</a>
+          </article>
         </div>
 
-        <div class="card">
-          <h3 data-i18n="feature_3_title">
-            Dynamic World
-          </h3>
-
-          <p data-i18n="feature_3_text">
-            Face rain, dry seasons, fires and
-            environmental changes.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3 data-i18n="feature_4_title">
-            Hunt or Be Hunted
-          </h3>
-
-          <p data-i18n="feature_4_text">
-            Carnivores, herbivores and AI creatures
-            fight for survival.
-          </p>
-        </div>
+        <p class="community-note" data-i18n="community_note">For important beta invitations, also register your email below.</p>
       </div>
     </section>
 
     <section id="beta" class="section beta">
-      <h2 data-i18n="beta_title">
-        Beta Test Coming Soon
-      </h2>
+      <div class="beta-content page-width">
+        <span class="tag">Closed Beta</span>
+        <h2 data-i18n="beta_title">Test Primitive Earth Before Launch</h2>
+        <p class="beta-description" data-i18n="beta_text">Register your email to receive an invitation to the closed beta, development updates and exclusive news about Primitive Earth.</p>
 
-      <p data-i18n="beta_text">
-        Primitive Earth is in development and a beta
-        test will be available for validation.
-      </p>
-
-      <form
-        id="newsletterForm"
-        class="newsletter"
-        novalidate
-      >
-        <div class="newsletter-fields">
-          <input
-            id="newsletterEmail"
-            name="email"
-            type="email"
-            placeholder="Email"
-            aria-label="Email"
-            autocomplete="email"
-            maxlength="150"
-            required
-            data-i18n-placeholder="email_placeholder"
-          />
-
-          <button
-            id="newsletterButton"
-            type="submit"
-            data-i18n="subscribe"
-          >
-            Notify Me
-          </button>
-        </div>
-
-        <!-- Proteção simples contra bots -->
-        <input
-          type="text"
-          name="_honey"
-          class="form-honeypot"
-          tabindex="-1"
-          autocomplete="off"
-          aria-hidden="true"
-        />
-
-        <label class="privacy-consent">
-          <input
-            id="newsletterConsent"
-            type="checkbox"
-            required
-          />
-
-          <span data-i18n="privacy_consent">
-            I agree to receive news and beta test
-            notifications from Primitive Earth.
-          </span>
-        </label>
-
-        <p
-          id="newsletterMessage"
-          class="newsletter-message"
-          role="status"
-          aria-live="polite"
-        ></p>
-      </form>
+        <form id="newsletterForm" class="newsletter" novalidate>
+          <div class="newsletter-fields">
+            <input id="newsletterEmail" name="email" type="email" autocomplete="email" inputmode="email" maxlength="150" required placeholder="Enter your email" aria-label="Email" data-i18n-placeholder="email_placeholder" />
+            <button id="newsletterButton" type="submit" data-i18n="subscribe">Notify Me</button>
+          </div>
+          <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <label for="newsletterConsent" class="privacy-consent">
+            <input id="newsletterConsent" type="checkbox" required />
+            <span data-i18n="privacy_consent">I agree to receive development news, beta invitations and email notifications from Primitive Earth. I understand that I can unsubscribe at any time.</span>
+          </label>
+          <p id="newsletterMessage" class="newsletter-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>
-      © 2026 Primitive Earth.
-      <span data-i18n="footer_rights">
-        All rights reserved.
-      </span>
-    </p>
+    <div class="page-width footer-inner">
+      <span class="footer-logo">Primitive Earth</span>
+      <div class="footer-socials" aria-label="Primitive Earth social links">
+        <a href="https://www.youtube.com/@Playprimitiveearth" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://discord.gg/tFNcyYBJxn" target="_blank" rel="noopener noreferrer">Discord</a>
+      </div>
+      <p>© 2026 Primitive Earth. <span data-i18n="footer_rights">All rights reserved.</span></p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
