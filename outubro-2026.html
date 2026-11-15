@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131713">
+  <meta name="description" content="Um saurópode herbívoro e um predador terrestre ampliam a seleção e oferecem duas formas de explorar e sobreviver no mapa.">
+  <title>Primitive Earth</title>
+  <link rel="icon" href="media/pe-icon.png" type="image/png" sizes="64x64">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="site-content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="page-width header-inner">
+      <a class="brand" href="index.html#top" aria-label="Primitive Earth">
+        <span class="brand-mark" aria-hidden="true">PE</span>
+        <span>Primitive <strong>Earth</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal" data-i18n-label="navigation">
+        <a href="index.html#dinossauros" data-i18n="nav_species">Jogáveis</a>
+        <a href="atualizacoes.html" data-i18n="nav_updates" aria-current="location">Atualizações</a>
+        <a href="index.html#galeria" data-i18n="nav_gallery">Galeria</a>
+        <a href="index.html#sobre" data-i18n="nav_about">Sobre</a>
+      </nav>
+      <div class="header-actions">
+        <select id="languageSelect" aria-label="Idioma" data-i18n-label="language">
+          <option value="pt" selected>PT-BR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
+        <a class="button header-beta" href="index.html#beta" data-i18n="nav_beta">Beta</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <article class="page-width article-page">
+      <a class="text-link article-back" href="atualizacoes.html" data-i18n="news_back">← Todas as atualizações</a>
+      <header class="article-heading">
+        <time datetime="2026-10" data-i18n="oct_date">Outubro de 2026</time>
+        <h1 data-i18n="oct_title">Camarasaurus e Carnotaurus jogáveis</h1>
+        <p class="lead" data-i18n="oct_summary">Um saurópode herbívoro e um predador terrestre ampliam a seleção e oferecem duas formas de explorar e sobreviver no mapa.</p>
+      </header>
+      <div class="article-cover news-cover">
+        <div class="news-models" aria-hidden="true">
+              <img src="media/camarasaurus.webp" width="389" height="188" alt="">
+              <img src="media/carnotaurus.webp" width="390" height="148" alt="">
+            </div>
+      </div>
+      <div class="article-body">
+        <section class="article-species">
+          <div class="species-media"><img src="media/camarasaurus.webp" width="389" height="188" alt="" loading="lazy"></div>
+          <div>
+            <h2>Camarasaurus</h2>
+            <p data-i18n="oct_cama">O Camarasaurus é um saurópode herbívoro de pescoço longo. Sua rotina gira em torno de encontrar vegetação e água, acompanhar o crescimento e escolher rotas seguras pelo mapa.</p>
+          </div>
+        </section>
+        <section class="article-species">
+          <div class="species-media"><img src="media/carnotaurus.webp" width="390" height="148" alt="" loading="lazy"></div>
+          <div>
+            <h2>Carnotaurus</h2>
+            <p data-i18n="oct_carno">O Carnotaurus é um carnívoro terrestre reconhecível pelos chifres acima dos olhos. Jogar com ele pede atenção ao terreno, à stamina e ao momento de se aproximar da presa.</p>
+          </div>
+        </section>
+        <a class="text-link" href="index.html#dinossauros" data-i18n="oct_visit">Ver espécies jogáveis →</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer" id="community">
+    <div class="page-width footer-inner">
+      <a class="brand" href="index.html#top"><span class="brand-mark" aria-hidden="true">PE</span><span>Primitive <strong>Earth</strong></span></a>
+      <div class="footer-links">
+        <a href="https://www.youtube.com/@primitive-earth" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+        <a href="https://discord.gg/87vQR5QtP" target="_blank" rel="noopener noreferrer">Discord ↗</a>
+      </div>
+      <small data-i18n="footer_rights">Todos os direitos reservados.</small>
+    </div>
+  </footer>
+</body>
+</html>

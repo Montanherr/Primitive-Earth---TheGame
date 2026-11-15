@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131713">
+  <meta name="description" content="A experiência de cada criatura influencia seu estilo de caça. O Purussaurus ganha novas regras de captura e a água passa a revelar mais pistas.">
+  <title>Primitive Earth</title>
+  <link rel="icon" href="media/pe-icon.png" type="image/png" sizes="64x64">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="site-content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="page-width header-inner">
+      <a class="brand" href="index.html#top" aria-label="Primitive Earth">
+        <span class="brand-mark" aria-hidden="true">PE</span>
+        <span>Primitive <strong>Earth</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal" data-i18n-label="navigation">
+        <a href="index.html#dinossauros" data-i18n="nav_species">Jogáveis</a>
+        <a href="atualizacoes.html" data-i18n="nav_updates" aria-current="location">Atualizações</a>
+        <a href="index.html#galeria" data-i18n="nav_gallery">Galeria</a>
+        <a href="index.html#sobre" data-i18n="nav_about">Sobre</a>
+      </nav>
+      <div class="header-actions">
+        <select id="languageSelect" aria-label="Idioma" data-i18n-label="language">
+          <option value="pt" selected>PT-BR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
+        <a class="button header-beta" href="index.html#beta" data-i18n="nav_beta">Beta</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <article class="page-width article-page">
+      <a class="text-link article-back" href="atualizacoes.html" data-i18n="news_back">← Todas as atualizações</a>
+      <header class="article-heading">
+        <time datetime="2026-11" data-i18n="nov_date">Novembro de 2026</time>
+        <h1 data-i18n="nov_title">Estilos de caça e adaptação</h1>
+        <p class="lead" data-i18n="nov_summary">A experiência de cada criatura influencia seu estilo de caça. O Purussaurus ganha novas regras de captura e a água passa a revelar mais pistas.</p>
+      </header>
+      <div class="article-cover news-cover">
+        <img src="media/purussaurus-lago.webp" width="1031" height="702" alt="">
+      </div>
+      <div class="article-body">
+        <section>
+          <h2 data-i18n="nov_practice_title">A prática desenvolve a criatura</h2>
+          <p data-i18n="nov_practice_a">Emboscar, perseguir presas, caçar em grupo, nadar e aproveitar oportunidades de alimentação desenvolvem estilos diferentes. A experiência pertence à criatura e a eficiência evolui dentro do potencial da espécie e da fase de crescimento.</p>
+          <p data-i18n="nov_practice_b">O painel Criatura mostra a experiência, a eficiência atual e o potencial de cada estilo. Conforme ganha prática, a criatura pode melhorar o controle durante a caça e economizar stamina em ações daquele estilo. A velocidade-base segue os atributos da espécie.</p>
+        </section>
+        <figure class="article-figure">
+          <a href="media/painel-criatura.webp" aria-label="Ampliar imagem do painel da criatura" data-i18n-label="expand_panel">
+            <img src="media/painel-criatura.webp" width="1500" height="807" loading="lazy"
+              alt="Painel do Purussaurus com crescimento, saúde, stamina, hidratação e estilos de caça." data-i18n-alt="panel_alt">
+          </a>
+          <figcaption data-i18n="update_panel_caption">Painel da criatura no jogo. Acompanhe atributos, crescimento e estilos de caça.</figcaption>
+        </figure>
+        <section>
+          <h2 data-i18n="nov_river_title">Adaptação aos rios</h2>
+          <p data-i18n="nov_river">Nas espécies com adaptação fluvial, nadar ativamente em rios desenvolve familiaridade com o ambiente. Isso pode reduzir o gasto de stamina no rio e aliviar parte do estresse por salinidade.</p>
+        </section>
+        <section>
+          <h2 data-i18n="nov_purus_title">Purussaurus e sobrevivência na água</h2>
+          <p data-i18n="nov_purus_a">Filhotes capturam presas do próprio tamanho ou menores. Jovens e adultos podem capturar presas maiores com o bote no botão direito. O Purussaurus também pode carregar carcaças ao alcance com F, sem limite de tamanho.</p>
+          <p data-i18n="nov_purus_b">Criaturas terrestres mantidas totalmente submersas enquanto são carregadas se afogam após três minutos contínuos. Aquáticas e semiaquáticas ficam isentas desse limite. Ondulações marcam a entrada e o momento de beber, com anéis visíveis também sob a superfície.</p>
+        </section>
+        <section>
+          <h2 data-i18n="nov_world_title">Margens, interação e desempenho</h2>
+          <p data-i18n="nov_world">NPCs vão às margens para beber e reagem a criaturas visíveis na água. Os avisos de comer, carregar e extrair órgãos aparecem na mesma linha quando disponíveis. A build Windows prioriza DirectX 11 e permite ajustar o limite de FPS.</p>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer" id="community">
+    <div class="page-width footer-inner">
+      <a class="brand" href="index.html#top"><span class="brand-mark" aria-hidden="true">PE</span><span>Primitive <strong>Earth</strong></span></a>
+      <div class="footer-links">
+        <a href="https://www.youtube.com/@primitive-earth" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+        <a href="https://discord.gg/87vQR5QtP" target="_blank" rel="noopener noreferrer">Discord ↗</a>
+      </div>
+      <small data-i18n="footer_rights">Todos os direitos reservados.</small>
+    </div>
+  </footer>
+</body>
+</html>

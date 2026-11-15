@@ -698,6 +698,10 @@ const heroVideo =
 // SETTINGS
 // ==========================================================
 
+for (const [language, labels] of Object.entries(siteCopy)) {
+  Object.assign(translations[language], labels);
+}
+
 const supportedLanguages =
   Object.keys(
     translations
@@ -840,6 +844,8 @@ function setLanguage(lang) {
   languageSelect.value =
     selected;
 
+  updateLocalizedA11y();
+
 
   localStorage.setItem(
     "primitive-earth-language",
@@ -851,17 +857,12 @@ function setLanguage(lang) {
   // UPDATE NEWSLETTER MESSAGE
   // ========================================================
 
-  if (
-    newsletterState ===
-    "success"
-  ) {
-
-    showNewsletterSuccess();
-
-  } else {
-
-    clearNewsletterMessage();
-
+  if (newsletterMessage) {
+    if (newsletterState === "success") {
+      showNewsletterSuccess();
+    } else {
+      clearNewsletterMessage();
+    }
   }
 
 }
@@ -1284,7 +1285,7 @@ languageSelect.addEventListener(
 // NEWSLETTER SUBMIT
 // ==========================================================
 
-newsletterForm.addEventListener(
+newsletterForm?.addEventListener(
   "submit",
   async (event) => {
 
