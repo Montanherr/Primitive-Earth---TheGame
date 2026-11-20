@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131713">
+  <meta name="description" content="Baixe a versão beta de teste do Primitive Earth para Windows e ajude a melhorar o jogo.">
+  <title>Beta de teste | Primitive Earth</title>
+  <link rel="icon" href="media/pe-icon.png" type="image/png" sizes="64x64">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="site-content.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="site-interactions.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="page-width header-inner">
+      <a class="brand" href="index.html#top" aria-label="Primitive Earth">
+        <span class="brand-mark" aria-hidden="true">PE</span>
+        <span>Primitive <strong>Earth</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal" data-i18n-label="navigation">
+        <a href="index.html#dinossauros" data-i18n="nav_species">Jogáveis</a>
+        <a href="atualizacoes.html" data-i18n="nav_updates">Atualizações</a>
+        <a href="index.html#galeria" data-i18n="nav_gallery">Galeria</a>
+        <a href="index.html#sobre" data-i18n="nav_about">Sobre</a>
+      </nav>
+      <div class="header-actions">
+        <select id="languageSelect" aria-label="Idioma" data-i18n-label="language">
+          <option value="pt" selected>PT-BR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
+        <a class="button header-beta" href="beta.html" aria-current="page" data-i18n="nav_beta">Beta</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="beta-hero" aria-labelledby="beta-page-title">
+      <img src="media/vale-primitive-earth.webp" width="1760" height="872" alt="" fetchpriority="high">
+      <div class="page-width beta-hero-copy">
+        <h1 id="beta-page-title" data-i18n="beta_page_title">Beta de teste</h1>
+        <p class="lead" data-i18n="beta_page_intro">Esta versão do Primitive Earth é exclusivamente para testes. Bugs e mudanças de balanceamento fazem parte desta etapa. Sua experiência ajuda a encontrar problemas e a melhorar o jogo.</p>
+      </div>
+    </section>
+
+    <div class="page-width beta-main">
+      <div class="beta-details">
+        <section class="beta-download-card" aria-labelledby="beta-card-title">
+          <h2 id="beta-card-title" data-i18n="beta_game_download">Baixe o jogo para testar</h2>
+          <dl>
+            <div><dt data-i18n="beta_platform">Plataforma</dt><dd>Windows x64</dd></div>
+            <div><dt data-i18n="beta_format">Formato</dt><dd>.rar</dd></div>
+          </dl>
+          <!-- Cole em data-drive-url o link compartilhável ou de download do arquivo .rar no Google Drive. -->
+          <a class="button button-primary" id="beta-download" data-drive-url="" data-i18n="beta_download"
+            target="_blank" rel="noopener noreferrer" aria-describedby="beta-download-ready" hidden>Baixar beta (.rar)</a>
+          <div id="beta-unavailable">
+
+<a href="https://drive.google.com/file/d/1Lv_7O3-bCrX2WhqYSigUeT3ltyzphudV/view?usp=sharing"
+   class="button button-primary"
+   data-i18n="beta_download"
+   download>
+    Baixar beta (.rar)
+</a>
+            <p data-i18n="beta_pending">O arquivo do beta estará disponível aqui assim que o download for liberado.</p>
+          </div>
+          <p id="beta-download-ready" hidden data-i18n="beta_download_host">O Google Drive fornece o arquivo. Se aparecer uma confirmação, prossiga por lá.</p>
+          <p><a href="index.html#beta" class="text-link" data-i18n="beta_newsletter">Receber avisos do beta</a></p>
+        </section>
+
+        <section class="beta-guide" aria-labelledby="beta-guide-title">
+          <h2 id="beta-guide-title" data-i18n="beta_install_title">Como instalar</h2>
+          <ol>
+            <li data-i18n="beta_install_download">Baixe o arquivo .rar usando o botão de download.</li>
+            <li data-i18n="beta_install_extract">Extraia todo o conteúdo do .rar para uma pasta.</li>
+            <li data-i18n="beta_install_play">Abra Primitive Earth.exe na pasta extraída.</li>
+          </ol>
+        </section>
+      </div>
+
+      <section class="beta-thanks" id="beta-thanks" aria-labelledby="beta-thanks-title" tabindex="-1" hidden>
+        <h2 id="beta-thanks-title" data-i18n="beta_thank_you">Obrigado por participar do teste!</h2>
+        <p data-i18n="beta_thank_review">Se publicar uma review ou um vídeo, mencione Primitive Earth, use #PrimitiveEarth e marque @primitive-earth no YouTube.</p>
+        <p data-i18n="beta_thank_feedback">Encontrou um bug? Conte o que aconteceu e como repetir o problema no Discord.</p>
+        <div class="button-row">
+          <a class="button button-ghost" href="https://discord.gg/87vQR5QtP" target="_blank" rel="noopener noreferrer"
+            data-i18n="beta_discord">Enviar feedback no Discord</a>
+          <a class="button button-ghost" href="https://www.youtube.com/@primitive-earth" target="_blank" rel="noopener noreferrer"
+            data-i18n="beta_youtube">Canal oficial no YouTube</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="community">
+    <div class="page-width footer-inner">
+      <a class="brand" href="index.html#top"><span class="brand-mark" aria-hidden="true">PE</span><span>Primitive <strong>Earth</strong></span></a>
+      <div class="footer-links">
+        <a href="https://www.youtube.com/@primitive-earth" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+        <a href="https://discord.gg/87vQR5QtP" target="_blank" rel="noopener noreferrer">Discord ↗</a>
+      </div>
+      <small data-i18n="footer_rights">Todos os direitos reservados.</small>
+    </div>
+  </footer>
+</body>
+</html>

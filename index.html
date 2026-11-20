@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="site-content.js" defer></script>
   <script src="script.js" defer></script>
+  <script src="site-interactions.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skip">Pular para o conteúdo</a>
@@ -34,7 +35,7 @@
           <option value="en">EN</option>
           <option value="es">ES</option>
         </select>
-        <a class="button header-beta" href="#beta" data-i18n="nav_beta">Beta</a>
+        <a class="button header-beta" href="beta.html" data-i18n="nav_beta">Beta</a>
       </div>
     </div>
   </header>
@@ -47,7 +48,7 @@
         <h1 id="hero-title"><span data-i18n="hero_line1">Sobreviva ao</span><strong data-i18n="hero_line2">mundo primitivo.</strong></h1>
         <p class="hero-lead" data-i18n="hero_lead">Escolha sua espécie, cresça de filhote a adulto e encontre seu lugar em um ecossistema onde cada margem, trilha e disputa por alimento conta.</p>
         <div class="button-row">
-          <a class="button button-primary" href="#beta"><span data-i18n="btn_beta">Inscreva-se no beta</span><span aria-hidden="true">↗</span></a>
+          <a class="button button-primary" href="beta.html" data-i18n="btn_beta">Conhecer o beta</a>
           <a class="button button-ghost" href="#dinossauros"><span data-i18n="hero_species">Conhecer as espécies</span><span aria-hidden="true">↓</span></a>
         </div>
         <div class="hero-meta">
@@ -69,10 +70,27 @@
             <button type="button" data-roster-filter="all" aria-pressed="true" data-i18n="filter_all">Todas</button>
             <button type="button" data-roster-filter="carnivore" aria-pressed="false" data-i18n="filter_carnivore">Carnívoras</button>
             <button type="button" data-roster-filter="herbivore" aria-pressed="false" data-i18n="filter_herbivore">Herbívoras</button>
+            <button type="button" data-roster-filter="omnivore" aria-pressed="false" data-i18n="filter_omnivore">Onívoras</button>
           </div>
         </div>
         <p class="sr-only" id="roster-status" aria-live="polite"></p>
         <div class="roster-grid" id="roster-grid">
+          <article class="species-card" data-diet="omnivore" data-habitat="water">
+            <div class="species-media"><img src="media/deinocheirus.webp" width="305" height="207" alt=""></div>
+            <div class="species-copy">
+              <p class="species-diet" data-i18n="diet_omnivore">Onívoro</p>
+              <h3>Deinocheirus</h3>
+              <p data-i18n="species_deinocheirus">Onívoro semiaquático de braços longos. Pode nascer em terra ou na água doce e afastar rivais com um tapa lateral.</p>
+            </div>
+          </article>
+          <article class="species-card" data-diet="omnivore" data-habitat="land">
+            <div class="species-media"><img src="media/gallimimus.webp" width="308" height="210" alt=""></div>
+            <div class="species-copy">
+              <p class="species-diet" data-i18n="diet_omnivore">Onívoro</p>
+              <h3>Gallimimus</h3>
+              <p data-i18n="species_gallimimus">Dinossauro leve e veloz. Usa a agilidade para cruzar áreas abertas e escapar de predadores.</p>
+            </div>
+          </article>
           <article class="species-card" data-diet="carnivore" data-habitat="water">
             <div class="species-media"><img src="media/purussaurus.webp" alt="" width="378" height="86"></div>
             <div class="species-copy">
@@ -167,6 +185,19 @@
           <a class="text-link" href="atualizacoes.html" data-i18n="news_all">Ver todas as atualizações ↗</a>
         </div>
         <div class="news-grid">
+        <article class="news-card news-card-featured">
+          <a href="ninhos-e-novos-jogaveis.html">
+            <div class="news-cover">
+              <img src="media/ninho-finalizado.webp" width="960" height="540" alt="" loading="lazy">
+              <time datetime="2026-11-19" data-i18n="nest_post_date">19 de novembro de 2026</time>
+            </div>
+            <div class="news-copy">
+              <h3 data-i18n="nest_post_title">Deinocheirus, Gallimimus e a vida no ninho</h3>
+              <p data-i18n="nest_post_summary">Dois novos jogáveis chegam ao beta. Veja como construir um ninho, acompanhar a incubação dos ovos e explorar as margens com o novo comportamento do Purussaurus.</p>
+              <span class="text-link" aria-hidden="true" data-i18n="news_read">Ler atualização →</span>
+            </div>
+          </a>
+        </article>
         <article class="news-card">
           <a href="novembro-2026.html">
             <div class="news-cover">
@@ -221,15 +252,57 @@
         <h2 id="gallery-title" data-i18n="gallery_title">Galeria</h2>
         <div class="gallery-grid">
           <figure>
-            <a href="media/sol-na-floresta.webp" aria-label="Floresta ao pôr do sol" data-i18n-label="gallery_sunset"><img src="media/sol-na-floresta.webp" width="1349" height="624" alt="" loading="lazy"></a>
+            <a href="media/vale-primitive-earth.webp" data-gallery-photo aria-label="Saurópodes no vale" data-i18n-label="gallery_valley">
+              <img src="media/vale-primitive-earth.webp" width="1760" height="872" alt="" loading="lazy" decoding="async">
+            </a>
+            <figcaption data-i18n="gallery_valley">Saurópodes no vale</figcaption>
+          </figure>
+          <figure>
+            <a href="media/perto-do-ninho.webp" data-gallery-photo aria-label="À beira do ninho" data-i18n-label="gallery_nest">
+              <img src="media/perto-do-ninho.webp" width="1405" height="741" alt="" loading="lazy" decoding="async">
+            </a>
+            <figcaption data-i18n="gallery_nest">À beira do ninho</figcaption>
+          </figure>
+          <figure>
+            <a href="media/deinocheirus-na-margem.webp" data-gallery-photo aria-label="Deinocheirus na margem" data-i18n-label="gallery_deino">
+              <img src="media/deinocheirus-na-margem.webp" width="1352" height="760" alt="" loading="lazy" decoding="async">
+            </a>
+            <figcaption data-i18n="gallery_deino">Deinocheirus na margem</figcaption>
+          </figure>
+          <figure>
+            <a href="media/sol-na-floresta.webp" data-gallery-photo aria-label="Floresta ao pôr do sol" data-i18n-label="gallery_sunset">
+              <img src="media/sol-na-floresta.webp" width="1349" height="624" alt="" loading="lazy" decoding="async">
+            </a>
             <figcaption data-i18n="gallery_sunset">Floresta ao pôr do sol</figcaption>
           </figure>
           <figure>
-            <a href="media/purussaurus-lago.webp" aria-label="Purussaurus no lago" data-i18n-label="gallery_purus"><img src="media/purussaurus-lago.webp" width="1031" height="702" alt="" loading="lazy"></a>
+            <a href="media/arco-iris-na-margem.webp" data-gallery-photo aria-label="Arco-íris sobre a margem" data-i18n-label="gallery_rainbow">
+              <img src="media/arco-iris-na-margem.webp" width="1440" height="793" alt="" loading="lazy" decoding="async">
+            </a>
+            <figcaption data-i18n="gallery_rainbow">Arco-íris sobre a margem</figcaption>
+          </figure>
+          <figure>
+            <a href="media/floresta-primitive-earth.webp" data-gallery-photo aria-label="Floresta sob neblina" data-i18n-label="gallery_fog">
+              <img src="media/floresta-primitive-earth.webp" width="1000" height="437" alt="" loading="lazy" decoding="async">
+            </a>
+            <figcaption data-i18n="gallery_fog">Floresta sob neblina</figcaption>
+          </figure>
+          <figure>
+            <a href="media/purussaurus-na-areia.webp" data-gallery-photo aria-label="Purussaurus em terra" data-i18n-label="gallery_puru_land">
+              <img src="media/purussaurus-na-areia.webp" width="924" height="472" alt="" loading="lazy" decoding="async">
+            </a>
+            <figcaption data-i18n="gallery_puru_land">Purussaurus em terra</figcaption>
+          </figure>
+          <figure>
+            <a href="media/purussaurus-lago.webp" data-gallery-photo aria-label="Purussaurus no lago" data-i18n-label="gallery_purus">
+              <img src="media/purussaurus-lago.webp" width="1031" height="702" alt="" loading="lazy" decoding="async">
+            </a>
             <figcaption data-i18n="gallery_purus">Purussaurus no lago</figcaption>
           </figure>
           <figure>
-            <a href="media/painel-criatura.webp" aria-label="Painel da criatura" data-i18n-label="gallery_panel"><img src="media/painel-criatura.webp" width="1500" height="807" alt="" loading="lazy"></a>
+            <a href="media/painel-criatura.webp" data-gallery-photo aria-label="Painel da criatura" data-i18n-label="gallery_panel">
+              <img src="media/painel-criatura.webp" width="1500" height="807" alt="" loading="lazy" decoding="async">
+            </a>
             <figcaption data-i18n="gallery_panel">Painel da criatura</figcaption>
           </figure>
         </div>
@@ -252,8 +325,8 @@
     <section class="section beta-section" id="beta" aria-labelledby="beta-title">
       <div class="page-width beta-grid">
         <div>
-          <p class="eyebrow" data-i18n="beta_tag">Beta fechado</p>
-          <h2 id="beta-title" data-i18n="beta_title">Entre na lista do beta fechado</h2>
+          <p class="eyebrow" data-i18n="beta_tag">Avisos do beta</p>
+          <h2 id="beta-title" data-i18n="beta_title">Receba novidades do beta</h2>
           <p class="lead" data-i18n="beta_intro">Receba novidades do desenvolvimento e avisos sobre oportunidades de teste por e-mail.</p>
         </div>
         <form id="newsletterForm" class="newsletter" novalidate>
@@ -283,6 +356,26 @@
       <small data-i18n="footer_rights">Todos os direitos reservados.</small>
     </div>
   </footer>
+
+  <dialog class="gallery-dialog" id="gallery-viewer" aria-labelledby="gallery-viewer-title">
+    <div class="gallery-dialog-header">
+      <h2 id="gallery-viewer-title" data-i18n="gallery_title">Galeria</h2>
+      <form method="dialog">
+        <button class="gallery-control" type="submit" aria-label="Fechar galeria" data-i18n-label="gallery_close" autofocus>×</button>
+      </form>
+    </div>
+    <figure>
+      <img class="gallery-full-image" src="media/vale-primitive-earth.webp" alt="" loading="lazy" draggable="false">
+      <figcaption class="gallery-controls">
+        <button class="gallery-control" type="button" data-gallery-step="-1" aria-label="Foto anterior" data-i18n-label="gallery_previous">‹</button>
+        <div class="gallery-information" aria-live="polite" aria-atomic="true">
+          <p class="gallery-caption"></p>
+          <p class="gallery-counter"></p>
+        </div>
+        <button class="gallery-control" type="button" data-gallery-step="1" aria-label="Próxima foto" data-i18n-label="gallery_next">›</button>
+      </figcaption>
+    </figure>
+  </dialog>
 
   <dialog class="gameplay-dialog" id="gameplay" aria-labelledby="gameplay-title">
     <div class="gameplay-header">
